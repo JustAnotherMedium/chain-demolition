@@ -11,7 +11,7 @@ public partial class TestProp : PropBase //, Node (through PropBase)
         hitPoints = MaxHitPoints;
     }
 
-    public override void Hurt(float hurtPoints)
+    public override void Hurt(float hurtPoints) // Get hurt (not fun)
     {
         hitPoints -= hurtPoints;
 

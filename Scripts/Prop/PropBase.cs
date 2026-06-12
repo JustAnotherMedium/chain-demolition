@@ -5,12 +5,12 @@ public abstract partial class PropBase : Node
 {
     public abstract float MaxHitPoints { get; }
 
-    public virtual void Hurt(float hurtPoints)
+    public virtual void Hurt(float hurtPoints) // Take damage method
     {
         GD.Print("ow (implement this you buffoon)");
     }
 
-    public virtual void Break()
+    public virtual void Break() // Unique Break effects will be handeled here
     {
         GD.Print("bleh ded (implement this you buffoon)");
     }
