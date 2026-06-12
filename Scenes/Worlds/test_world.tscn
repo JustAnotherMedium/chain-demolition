@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cssvongtdvjkr"]
+
+[ext_resource type="PackedScene" uid="uid://dvgfje3dcd6nf" path="res://Scenes/Player/player.tscn" id="1_rq4xh"]
+[ext_resource type="PackedScene" uid="uid://bcj3cmhfrottx" path="res://Scenes/Player/Weapons/axe.tscn" id="2_5e1ne"]
+[ext_resource type="PackedScene" uid="uid://dffunxpubqctx" path="res://Scenes/Props/test_prop.tscn" id="3_y6sxc"]
+
+[node name="Test World" type="Node2D" unique_id=910540042]
+
+[node name="Player" parent="." unique_id=623203572 instance=ExtResource("1_rq4xh")]
+position = Vector2(558, 304)
+
+[node name="Axe" parent="." unique_id=1344844512 instance=ExtResource("2_5e1ne")]
+position = Vector2(558, 304)
+
+[node name="TestProp" parent="." unique_id=1635648152 instance=ExtResource("3_y6sxc")]
+position = Vector2(494, 301)

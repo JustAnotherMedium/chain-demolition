@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bcj3cmhfrottx"]
+
+[ext_resource type="Texture2D" uid="uid://bhvo84k7rsoil" path="res://Sprites/Player/Weapons/axe.png" id="1_5snyu"]
+[ext_resource type="Script" uid="uid://dcuyrj3irgi0u" path="res://Scripts/Player/Weapons/Axe.cs" id="1_mq61r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mq61r"]
+size = Vector2(39, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02qbl"]
+size = Vector2(72, 15)
+
+[node name="Axe" type="Node2D" unique_id=1344844512]
+script = ExtResource("1_mq61r")
+
+[node name="AxeSprite" type="Sprite2D" parent="." unique_id=737178403]
+texture = ExtResource("1_5snyu")
+offset = Vector2(0, -32)
+
+[node name="HitBox" type="Area2D" parent="." unique_id=1325335310]
+
+[node name="Handle" type="CollisionShape2D" parent="HitBox" unique_id=1468765144]
+position = Vector2(0.5, -32)
+shape = SubResource("RectangleShape2D_mq61r")
+
+[node name="Blade" type="CollisionShape2D" parent="HitBox" unique_id=2095699879]
+position = Vector2(0, -52)
+shape = SubResource("RectangleShape2D_02qbl")

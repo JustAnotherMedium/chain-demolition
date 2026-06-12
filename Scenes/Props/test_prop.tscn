@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dffunxpubqctx"]
+
+[ext_resource type="Texture2D" uid="uid://7vt7hh117sxa" path="res://Sprites/Props/table thing.png" id="1_ds62j"]
+[ext_resource type="Script" uid="uid://c5vtwe6xwe5n0" path="res://Scripts/Prop/TestProp/TestProp.cs" id="1_wuraw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuraw"]
+size = Vector2(64, 48)
+
+[node name="TestProp" type="Node2D" unique_id=1635648152]
+script = ExtResource("1_wuraw")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=1946143786]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=70292672]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_wuraw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1951449963]
+texture = ExtResource("1_ds62j")
